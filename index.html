@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Avalie sua Mentoria</title>
+
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400&family=Staatliches&display=swap"
+    rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+  <div class="container">
+
+    <!--Header-->
+
+    <header>
+      <section class="top-Content">
+        <h1>avalie a sua mentoria</h1>
+        <p>Chegou a hora de avaliar o seu mentor. Bora lá?</p>
+        <img src="/images/img_principal.svg" alt="">
+      </section>
+
+    </header>
+
+    <div class="formContainer-top">
+      <legend class="legend-top">Informações pessoais</legend>
+    </div>
+    <form id="my-form">
+
+      <div class="formContainer">
+        
+        <!-- fieldset 1 Informações Pessoais -->
+        <fieldset>
+          <div class="fieldset-wrapper">
+
+            <div class="colReset">
+
+              <div class="input-wrapper">
+                <label for="personal_name">Nome</label>
+                <input type="text" id="personal_name" required>
+              </div>
+
+              <div class="input-wrapper">
+                <label for="personal_lastName">Sobrenome</label>
+                <input type="text" id="personal_lastName" required>
+              </div>
+            </div>
+
+            <div class="input-wrapper">
+              <label for="personal_email">Email <span>(digite um email válido)</span></label>
+              <input type="email" id="personal_email" required>
+            </div>
+
+          </div>
+        </fieldset>
+
+        <!-- fieldset 2 - Informações do mentor -->
+        <fieldset>
+          <div class="fieldset-wrapper">
+            <legend>Informações do mentor</legend>
+
+
+            <div class="input-wrapper">
+              <label for="select-mentor">Selecione quem foi o seu mentor</label>
+              <select name="" id="select-mentor">
+                <option value="vazio"></option>
+                <option value="Mentor 1 - Kyrsten">Kyrsten</option>
+                <option value="Mentor 2 - Guilherme">Guilherme</option>
+                <option value="Mentor 3 - Matheus">Matheus</option>
+
+              </select>
+            </div>
+
+            <div class="input-wrapper">
+              <label for="mentor-feedback">Feedback sobre o mentor</label>
+              <textarea name="" id="mentor-feedback"></textarea>
+            </div>
+
+            <div class="input-wrapper">
+              <div class="checkboxPosition">
+                <input type="checkbox" class="checkbox" name="" id="mentor-checkbox" required>
+                <label for="mentor-checkbox">Todas as minhas dúvidas foram esclarecidas durante a mentoria.</label>
+              </div>
+            </div>
+
+          </div>
+        </fieldset>
+
+        <!-- Fieldset 3 - Agendando próxima mentoria-->
+        <fieldset>
+          <div class="fieldset-wrapper">
+            <legend>Agendando próxima mentoria</legend>
+
+            <div class="colReset">
+
+
+              <div class="input-wrapper">
+                <label for="event-Date">Data <span>(DD/MM/AAAA)</span></label>
+                <input type="date" id="event-Date">
+              </div>
+
+              <div class="col-Time">
+                <div class="input-wrapper">
+                  <label for="event-Start">Das</label>
+                  <input type="time" id="event-Start">
+                </div>
+
+
+                <div class="input-wrapper">
+                  <label for="event-End">Até</label>
+                  <input type="time" id="event-End">
+                </div>
+              </div>
+            </div>
+
+          </div>
+
+
+        </fieldset>
+
+        <!-- Botao Enviar Formulário-->
+        <fieldset>
+          <div class="fieldset-wrapper">
+            <button type="submit" form="my-form">SALVAR</button>
+          </div>
+        </fieldset>
+
+
+      </div>
+    </form>
+
+  </div>
+
+</body>
+
+</html>
